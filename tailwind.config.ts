@@ -66,7 +66,7 @@ export default {
         brand: {
           green: "#205B4E",
           black: "#1A1A1A",
-          orange: "#F06C35",
+          orange: "#00ff00",  // Changed from #F06C35 to #00ff00
           lightGray: "#F8F8F8",
           waterBlue: "#6BADC9",
           teal: "#3A8F88",
