@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Button } from '../ui/button';
 
 const ContactItem = ({ 
   icon, 
@@ -33,6 +34,8 @@ const ContactItem = ({
 };
 
 const Contact = () => {
+  const whatsappUrl = "https://wa.me/5514996279878";
+  
   return (
     <section id="contato" className="section bg-gray-50">
       <div className="max-w-5xl mx-auto">
@@ -57,7 +60,7 @@ const Contact = () => {
                 }
                 title="WhatsApp"
                 content={
-                  <a href="https://wa.me/5514996279878" className="hover:text-brand-orange transition-colors duration-300">
+                  <a href={whatsappUrl} className="hover:text-brand-orange transition-colors duration-300">
                     (14) 99627-9878
                   </a>
                 }
@@ -121,7 +124,7 @@ const Contact = () => {
           </div>
         </div>
         
-        <div className="bg-brand-green text-white rounded-2xl p-8 md:p-12 shadow-xl overflow-hidden relative">
+        <div className="bg-[#111111] text-white rounded-2xl p-8 md:p-12 shadow-xl overflow-hidden relative">
           <div className="absolute top-0 right-0 w-1/2 h-full opacity-10" style={{
             backgroundImage: "url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2787&q=80')",
             backgroundSize: 'cover',
@@ -133,9 +136,9 @@ const Contact = () => {
             <p className="mb-8 text-white/90">
               Aumente suas vendas e fidelize seus clientes com produtos que realmente funcionam.
             </p>
-            <button className="btn-primary bg-white text-brand-green hover:bg-gray-100">
-              Solicitar Catálogo
-            </button>
+            <a href={whatsappUrl} className="btn-primary bg-white text-[#111111] hover:bg-gray-100">
+              Entrar em Contato Agora
+            </a>
           </div>
         </div>
       </div>
