@@ -12,13 +12,13 @@ const Hero = () => {
         <div 
           className="absolute inset-0 bg-gradient-to-b from-brand-black/80 to-brand-black/40 z-10"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1581094488858-2587e6d6e45e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')",
+            backgroundImage: "url('https://img.freepik.com/free-photo/fisherman-s-hand-with-fresh-caught-fish_23-2147894204.jpg?t=st=1742908552~exp=1742912152~hmac=f78db1ba25c8561b3c6db642d4ab52740ab66f08709691a5583d22b4498afedf&w=996')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             mixBlendMode: 'overlay'
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-black/70 via-brand-black/50 to-transparent z-20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-black/90 to-brand-black/50  z-20" />
       </div>
 
       {/* Content */}
@@ -72,13 +72,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Decorative Elements */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.4 }}
-        transition={{ duration: 1, delay: 0.7 }}
-        className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-20"
-      />
+
     </div>
   );
 };

@@ -34,10 +34,7 @@ const ProductCard = ({
           <h3 className="text-xl font-semibold mb-2 text-brand-black">{title}</h3>
           <p className="text-gray-600 mb-4 flex-1">{description}</p>
           <button className="text-brand-green font-medium group-hover:text-brand-orange transition-colors duration-300 inline-flex items-center mt-auto">
-            Ver detalhes
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
+          
           </button>
         </div>
       </div>
@@ -50,22 +47,22 @@ const Products = () => {
     {
       title: "Iscas de Superfície",
       description: "Modelos flutuantes ideais para água doce, perfeitos para pescarias matutinas e noturnas.",
-      imageSrc: "https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      imageSrc: "https://img.freepik.com/free-photo/fishing-float-lure-with-plier-wooden-desk_23-2148189276.jpg?t=st=1742908282~exp=1742911882~hmac=fb1f91aa4eb40f1641c89ef3c086c0015ac0a79adb3968b53fe4efe356bd7777&w=996",
     },
     {
       title: "Iscas de Meia Água",
       description: "Ação intermediária versátil para diversas espécies, com movimento realista e cores atrativas.",
-      imageSrc: "https://images.unsplash.com/photo-1596442828814-1227dd9bbcd4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      imageSrc: "https://img.freepik.com/free-photo/person-fixing-fish-hook_23-2148204113.jpg?t=st=1742908325~exp=1742911925~hmac=3726b5fecafad0980e5ad6b577fcce7acc83d55962d5b3ddbc8ff1a855890c4f&w=996",
     },
     {
       title: "Iscas de Fundo",
       description: "Modelos pesados para águas profundas, projetados para alcançar peixes em zonas de difícil acesso.",
-      imageSrc: "https://images.unsplash.com/photo-1516178151160-2a42e646f274?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      imageSrc: "https://img.freepik.com/free-photo/different-type-fish-lure-hanging-fishing-line_23-2147894015.jpg?t=st=1742908377~exp=1742911977~hmac=1984e3fcb360265e30c09492d6d1a3a38b14b353ba983f9fcadb9e6d1a56d99b&w=900",
     },
     {
       title: "Kits Personalizados",
       description: "Combinações estratégicas para diferentes espécies e ambientes, perfeitas para revenda.",
-      imageSrc: "https://images.unsplash.com/photo-1632911643511-53c991881118?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      imageSrc: "https://img.freepik.com/free-photo/fishing-tool-box-ground_23-2148204130.jpg?t=st=1742908407~exp=1742912007~hmac=946a750541893fc24bdd4acd2930c88798aaebe7d4309042f6954b37cde69cf9&w=740",
     },
   ];
 

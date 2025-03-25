@@ -27,11 +27,10 @@ const Header = () => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 px-6 md:px-12 py-4 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 px-6 md:px-12 py-4 transition-all duration-300 ${scrolled
           ? 'glass-dark shadow-md'
           : 'bg-transparent'
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <motion.div
@@ -41,7 +40,7 @@ const Header = () => {
           className="flex items-center"
         >
           <div className="text-2xl font-bold text-white">
-            <span className="text-brand-orange">Iscas</span> Lopes
+            <img src="/images/logo.png" alt="Logo" className='w-36 h-auto' />
           </div>
         </motion.div>
 
@@ -53,9 +52,8 @@ const Header = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.1 * (index + 1) }}
-              className={`font-medium transition-colors duration-300 hover:text-brand-orange ${
-                scrolled ? 'text-white' : 'text-white'
-              }`}
+              className={`font-medium transition-colors duration-300 hover:text-brand-orange ${scrolled ? 'text-white' : 'text-white'
+                }`}
             >
               {item}
             </motion.a>
