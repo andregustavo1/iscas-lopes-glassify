@@ -3,6 +3,8 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
+  const whatsappUrl = "https://wa.me/5514996279878";
+  
   return (
     <div id="início" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -57,15 +59,15 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4"
           >
-            <button className="btn-primary">
-              Conheça Nossos Produtos
-            </button>
-            <button className="px-6 py-3 text-white hover:text-brand-orange transition-colors duration-300 flex items-center">
-              <span>Saiba mais</span>
+            <a href={whatsappUrl} className="btn-primary">
+              Contate-nos Via WhatsApp
+            </a>
+            <a href={whatsappUrl} className="px-6 py-3 text-white hover:text-brand-orange transition-colors duration-300 flex items-center">
+              <span>Fale Conosco</span>
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
               </svg>
-            </button>
+            </a>
           </motion.div>
         </div>
       </div>

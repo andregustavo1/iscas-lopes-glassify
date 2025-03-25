@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const whatsappUrl = "https://wa.me/5514996279878";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,14 +62,15 @@ const Header = () => {
           ))}
         </nav>
 
-        <motion.button
+        <motion.a
+          href={whatsappUrl}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
           className="btn-primary text-sm"
         >
-          Pedir Catálogo
-        </motion.button>
+          Contate-nos
+        </motion.a>
       </div>
     </motion.header>
   );

@@ -137,7 +137,7 @@ const Contact = () => {
               Aumente suas vendas e fidelize seus clientes com produtos que realmente funcionam.
             </p>
             <a href={whatsappUrl} className="btn-primary bg-white text-[#111111] hover:bg-gray-100">
-              Entrar em Contato Agora
+              Contate-nos Agora
             </a>
           </div>
         </div>
