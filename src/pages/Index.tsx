@@ -1,13 +1,55 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React, { useEffect } from 'react';
+import Header from '../components/layout/Header';
+import Hero from '../components/sections/Hero';
+import About from '../components/sections/About';
+import WhyChoose from '../components/sections/WhyChoose';
+import Products from '../components/sections/Products';
+import Contact from '../components/sections/Contact';
+import Footer from '../components/layout/Footer';
+import { motion } from 'framer-motion';
 
 const Index = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animated');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    document.querySelectorAll('.animate-on-scroll').forEach((element) => {
+      observer.observe(element);
+    });
+
+    return () => {
+      document.querySelectorAll('.animate-on-scroll').forEach((element) => {
+        observer.unobserve(element);
+      });
+    };
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="overflow-x-hidden"
+    >
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Products />
+        <WhyChoose />
+        <Contact />
+      </main>
+      <Footer />
+    </motion.div>
   );
 };
 
